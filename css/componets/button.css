@@ -1,0 +1,100 @@
+/* button */
+.button {
+  display: flex;
+  text-align: center;
+
+  background-color: var(--white);
+  color: var(--not-quite-black);
+  color: #23272a;
+
+  line-height: 24px;
+  border-radius: 40px;
+
+  font-size: .8em;
+  padding: 7px 16px;
+
+  transition: all .4s ease-in-out;
+}
+
+/* group buttons */
+.button__group {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 32px;
+}
+.button + .button {
+  margin-left: 32px;
+}
+
+/* icons */
+.icon {
+  margin-right: 8px;
+}
+/* size */
+.button--large {
+  font-size:  20px;
+  padding: 16px 32px; 
+}
+/* modifiquer colors */
+.button--gray {
+  background-color: var(--dark-not-black);
+  color: var(--white);
+}
+.button--brand {
+  background-color: var(--brand);
+  color: var(--white);
+}
+
+/* hover */
+.button:hover {
+  box-shadow: 0 8px 15px rgba(0,0,0,.2);
+  color: var(--brand);
+}
+
+.button.button--gray:hover {
+  filter: brightness(125%);
+  box-shadow: 0 8px 15px rgba(0,0,0,.2);
+  color: var(--white);
+}
+.button.button--brand:hover {
+  box-shadow: 0 8px 15px rgba(0,0,0,.2);
+  color: var(--white);
+}
+
+@media (max-width: 1000px) {
+  .button {
+    font-size: 1.1em;
+  }
+  .button__group {
+    flex-flow: row wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+  }
+  .button + .button {
+    margin: 18px 0;
+  }
+ 
+}
+
+@media (max-width: 760px) {
+  .button {
+    font-size: 1.1em;
+  }
+  .button__group {
+    flex-flow: column wrap;
+    justify-content: space-between;
+
+  }
+  .button + .button {
+    margin: 20px auto;
+  }
+}
+
+
+
+
+
+

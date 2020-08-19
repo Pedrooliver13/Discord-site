@@ -1,0 +1,49 @@
+/* title */
+.title {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 1em;
+  
+  color:#23272a;
+  color: (--not-quite-black);
+}
+
+/* title size */
+.title--large {
+  font-weight: bolder;
+  font-size: 52px;
+}
+.title--small {
+  font-weight: bolder;
+  font-size: 2em;
+
+}
+/* title color */
+.title--white {
+  color: var(--white);
+}
+
+/* text */
+.text {
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 32px;
+
+  margin-top: 46px;
+}
+
+/* text size */
+.text--medium {
+  font-size: 2em;
+}
+
+@media (max-width: 760px) {
+  .title {
+    font-size: 2em;
+  }
+  
+  .title--large {
+    text-align: start;
+    font-size: 3em;
+  }
+}

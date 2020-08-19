@@ -1,0 +1,32 @@
+@keyframes animationImagesRight {
+  0% {
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  to {
+    -webkit-transform: translateX(10000%);
+    transform: translateX(10000%);
+  }
+}
+
+@keyframes animationImagesUp {
+  0% {
+    -webkit-transform: translateY(80%);
+    transform: translateY(80%);
+  }
+
+  to {
+    -webkit-transform: translateY(-10000%);
+    transform: translateY(-10000%);
+  }
+}
+
+@keyframes animationWave {
+  from {
+    left: -30px;
+  }
+  to {
+    left: 0;
+  }
+}
